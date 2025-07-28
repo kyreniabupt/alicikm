@@ -33,7 +33,7 @@ python dataset.py
 
 #SFT 命令,这个参数我调的很小,为了在我电脑上跑通
 cd LLAMA-FACTORY
-llamafactory-cli train examples/train_lora/llama3_lora_sft.yaml
+llamafactory-cli train examples/train_lora/my_lora_sft.yaml
 
 
 # 评估最终模型
