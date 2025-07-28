@@ -1,0 +1,3 @@
+{"id": 70376, "task": "QC", "language": "es", "origin_query": "fuente agua gato", "category_path": "home & garden,garden supplies,yard & garden decor,fountains & bird baths", "label": 0}
+{"id": 1691, "task": "QC", "language": "en", "origin_query": "abaya for women dubai 2023", "category_path": "women's clothing,dresses", "label": 0}
+{"id": 210650, "task": "QC", "language": "ko", "origin_query": "남성골프 긴팔티셔츠", "category_path": "sports & entertainment,golf,golf tees", "label": 0}

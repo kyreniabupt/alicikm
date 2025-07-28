@@ -1,0 +1,27 @@
+[
+  {
+    "instruction": "\nYou are a classification assistant.\n\nGiven a user query and a category path (with levels separated by commas, from general to specific), determine whether the entire category path aligns with the query intent.\n\n- If any level in the path is unrelated or misleading, respond with `False`.\n- Otherwise, respond with `True`.\n\nAnswer strictly with either `True` or `False`.\n\n",
+    "input": "Query: bottes de chasse hommes\n category_path: shoes,men's shoes,men's boots（do not post in this category）",
+    "output": "true"
+  },
+  {
+    "instruction": "\nYou are a classification assistant.\n\nGiven a user query and a category path (with levels separated by commas, from general to specific), determine whether the entire category path aligns with the query intent.\n\n- If any level in the path is unrelated or misleading, respond with `False`.\n- Otherwise, respond with `True`.\n\nAnswer strictly with either `True` or `False`.\n\n",
+    "input": "Query: carcasa samsung note 20 ultra\n category_path: phones & telecommunications accessories,mobile phone accessories,mobile phone camera protectors",
+    "output": "false"
+  },
+  {
+    "instruction": "\nYou are a classification assistant.\n\nGiven a user query and a category path (with levels separated by commas, from general to specific), determine whether the entire category path aligns with the query intent.\n\n- If any level in the path is unrelated or misleading, respond with `False`.\n- Otherwise, respond with `True`.\n\nAnswer strictly with either `True` or `False`.\n\n",
+    "input": "Query: alfombrillas para coche plástico\n category_path: automobiles, parts & accessories,interior accessories,car mat accessories,door groove mat",
+    "output": "true"
+  },
+  {
+    "instruction": "\nYou are a classification assistant.\n\nGiven a user query and a category path (with levels separated by commas, from general to specific), determine whether the entire category path aligns with the query intent.\n\n- If any level in the path is unrelated or misleading, respond with `False`.\n- Otherwise, respond with `True`.\n\nAnswer strictly with either `True` or `False`.\n\n",
+    "input": "Query: organizador de cajones ropa\n category_path: home & garden,home storage & organization,laundry storage & organization,pants rack",
+    "output": "false"
+  },
+  {
+    "instruction": "\nYou are a classification assistant.\n\nGiven a user query and a category path (with levels separated by commas, from general to specific), determine whether the entire category path aligns with the query intent.\n\n- If any level in the path is unrelated or misleading, respond with `False`.\n- Otherwise, respond with `True`.\n\nAnswer strictly with either `True` or `False`.\n\n",
+    "input": "Query: さび除去 レーザー\n category_path: automobiles, parts & accessories,car wash & maintenance,rust converter, rust remover & rust prevention",
+    "output": "false"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "instruction": "\nYou are a classification assistant.\n\nGiven a user query and a category path (with levels separated by commas, from general to specific), determine whether the entire category path aligns with the query intent.\n\n- If any level in the path is unrelated or misleading, respond with `False`.\n- Otherwise, respond with `True`.\n\nAnswer strictly with either `True` or `False`.\n\n",
+    "input": "Query: fuente agua gato\n category_path: home & garden,garden supplies,yard & garden decor,fountains & bird baths",
+    "output": "False"
+  },
+  {
+    "instruction": "\nYou are a classification assistant.\n\nGiven a user query and a category path (with levels separated by commas, from general to specific), determine whether the entire category path aligns with the query intent.\n\n- If any level in the path is unrelated or misleading, respond with `False`.\n- Otherwise, respond with `True`.\n\nAnswer strictly with either `True` or `False`.\n\n",
+    "input": "Query: abaya for women dubai 2023\n category_path: women's clothing,dresses",
+    "output": "False"
+  },
+  {
+    "instruction": "\nYou are a classification assistant.\n\nGiven a user query and a category path (with levels separated by commas, from general to specific), determine whether the entire category path aligns with the query intent.\n\n- If any level in the path is unrelated or misleading, respond with `False`.\n- Otherwise, respond with `True`.\n\nAnswer strictly with either `True` or `False`.\n\n",
+    "input": "Query: 남성골프 긴팔티셔츠\n category_path: sports & entertainment,golf,golf tees",
+    "output": "False"
+  }
+]
