@@ -1,6 +1,6 @@
-from tqdm import tqdm, trange
+from tqdm import trange
 import sglang as sgl
-from typing import Dict, Any, Optional, Union, List, Tuple
+from typing import List
 
 
 class SGLangModel:
@@ -40,7 +40,6 @@ class SGLangModel:
         prompts: List[str],
         temperature: float = 0.2,
         top_p: float = 0.9,
-        dataset_i: int = 0
     ):  
         
             
@@ -56,8 +55,8 @@ class SGLangModel:
         """
         message:
                 [
-            [{"role": "user", "content": "你是谁？"}],
-            [{"role": "user", "content": "今天天气怎么样？"}]
+            [{"role": "user", "content": "txt1"}],
+            [{"role": "user", "content": "txt2"}]
         ]
 
         """
@@ -65,8 +64,8 @@ class SGLangModel:
         """
             input_texts:
                 [
-                "<|user|>你是谁？<|assistant|>",
-                "<|user|>今天天气怎么样？<|assistant|>"
+                "<|user|>txt1<|assistant|>",
+                "<|user|>txt2<|assistant|>"
             ]
 
         """
@@ -75,10 +74,10 @@ class SGLangModel:
         batch_size = self.batch_size
         for idx in trange(0, len(input_texts), batch_size):
             """
-                    self.model.generate 每次返回:
+                    self.model.generate 返回:
                     [
                         {
-                            'text': '你好，我是一个语言模型。',
+                            'text': 'o: <think> 一些思考 </think> True',
                             'usage': {
                                 'prompt_tokens': 27,
                                 'completion_tokens': 14,
@@ -86,19 +85,13 @@ class SGLangModel:
                             }
                         },
                         {
-                            'text': '今天天气晴朗，适合出门。',
-                            'usage': {
-                                'prompt_tokens': 30,
-                                'completion_tokens': 15,
-                                'total_tokens': 45
-                            }
-                        },
-                        
+                            ...
+                        }
                     ]
 
                 """
             
-            print(f"Processing batch {idx // batch_size + 1} of {len(input_texts) // batch_size}")
+            #print(f"Processing batch {idx // batch_size + 1} of {len(input_texts) // batch_size}")
             
             outputs.extend(
                 self.model.generate(

@@ -1,20 +1,12 @@
-import collections
+
 import os
-import random
-import re
-import json
-import sys
 import logging
-import time
 import argparse
-import random
-import sglang as sgl
+
 from model import SGLangModel
-from tqdm import tqdm, trange
-from typing import Dict, Any, Optional, Union, List, Tuple
 from prompt import prompt_template_dict
 from utils import compute_accuracy,write_result
-from dataset import read_dataset_label,generate_Alpaca_Dataset
+from dataset import read_dataset_label
 
 logger = logging.getLogger(__name__)
 
