@@ -101,6 +101,7 @@ if __name__ == "__main__":
         filtered_dataset1 = []
         for d, o, label in zip(data, outputs, labels):
             # 提取 prediction
+            # o: <think> 一些思考 </think> True
             prediction = 1 if 'True' in o.split("</think>")[-1] else 0
 
             # 构造 new_output
